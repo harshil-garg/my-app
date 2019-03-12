@@ -43,7 +43,10 @@ class Register extends Component {
     fetch('https://vcm-8670.vm.duke.edu:3000/api/users/login', {
       crossDomain: true,
       method: "POST",
-      headers: {'Content-Type':'application/json'},
+      headers: {
+        'Content-Type':'application/json',
+        'Access-Control-Allow-Origin':'*'
+      },
       body: {
         email: "admin",
         password: "password"
