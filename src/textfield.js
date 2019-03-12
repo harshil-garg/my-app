@@ -35,9 +35,8 @@ class Register extends Component {
   }
 
   getUsers = async () => {
-    let res = await axios.post('https://vcm-8670.vm.duke.edu:3000/api/users/login', {
-      "email" : "admin",
-	    "password": "password"
+    let res = await axios.post('http://vcm-8670.vm.duke.edu:3000/api/users/login', {
+      crossdomain: true
     });
     console.log(res);
   }
