@@ -1,0 +1,27 @@
+  .tippy-tooltip.tomato-theme {
+    background-color: tomato;
+    color: yellow;
+  }
+  
+  .tippy-tooltip.tomato-theme[data-animatefill] {
+    background-color: transparent;
+  }
+  
+  .tippy-tooltip.tomato-theme .tippy-backdrop {
+    background-color: tomato;
+  }
+
+  .tippy-tooltip [x-arrow] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    }
+
+.tippy-popper[x-placement^="right"] [x-arrow] {
+    border-right: 7px solid tomato;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    left: -7px;
+    margin: 6px 0;
+
+}
